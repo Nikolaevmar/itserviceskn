@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800">
           <span className="text-3x1 text-indigo-600 mr-2 pt-2">
-            <ion-icon name="desktop-outline"></ion-icon>
+            <ion-icon name="radio-outline"></ion-icon>
           </span>
           <Link to="/">IT Services</Link>
           <div onClick={() => setOpen(!open)} className="absolute right-8 top-6 cursor-pointer md:hidden">
