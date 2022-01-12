@@ -19,9 +19,12 @@ export default function Home() {
               инсталация на драйвери, инсталация на софтуер, софтуерна
               диагностика, и помощ при разрешаване на вашите проблеми
             </p>
-            <div className="flex justify-center flex-wrap gap-6">
+            <div className="flex justify-center flex-wrap gap-6 mt-3">
               <button class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Пусни своята заявка
+              </button>
+              <button class="bg-gray-300 shadow-2xl hover:bg-indigo-500 text-black font-bold py-2 px-4 rounded-full">
+                Имате запитване?
               </button>
             </div>
           </div>
