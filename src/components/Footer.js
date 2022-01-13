@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <section className="bg-indigo-600 insert-x-0 bottom-0 flex items-center justify-center w-full transition-all duration-500 ease-in">
+    <section className="bg-gray-800 insert-x-0 bottom-0 flex items-center justify-center w-full transition-all duration-500 ease-in">
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex justify-center mt-8 space-x-6">
           <a href="https://www.facebook.com/profile.php?id=100057793106472" target="_blank" className="text-white">

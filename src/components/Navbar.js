@@ -6,7 +6,7 @@ export default function Navbar() {
   let [open, setOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-indigo-600">
+      <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
             <div className="flex items-center w-full justify-between">
@@ -18,15 +18,18 @@ export default function Navbar() {
                 </div>
                <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium">
+                <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
+                  <Link to="/">Начало</Link>
+                  </div>
+                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/contacts">Контакти</Link>
                   </div>
 
-                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/pricing">Услуги</Link>
                   </div>
 
-                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/apply">Работи от вкъщи</Link>
                   </div>
                 </div>
@@ -90,15 +93,13 @@ export default function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  <div className="text-white  px-3 py-2 rounded-md text-sm font-medium">
+                  <div className="text-white  px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/contacts">Контакти</Link>
                   </div>
-
-                  <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/pricing">Услуги</Link>
                   </div>
-
-                  <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/apply">Работи от вкъщи</Link>
                   </div>
               </div>
