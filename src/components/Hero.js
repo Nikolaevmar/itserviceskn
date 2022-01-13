@@ -10,17 +10,14 @@ export default function Hero() {
               Запознайте се с нас!
             </h2>
             <p className="text-gray-400 lg:text-lg sm:text-sm text-center mb-6 ">
-              IT Services предлага професионална, дистанционна поддръжка която
-              включва: почистване от вируси, решаване на софтуерни проблеми,
-              инсталация на драйвери, инсталация на софтуер, софтуерна
-              диагностика, и помощ при разрешаване на вашите проблеми
+            Нашите специалисти в IT Services ще Ви предложат услуги на високо ниво, за да отстранят всеки един софтуерен или хардуерен проблем с компютрите или лаптопите във вашия дом или офис, на място или изцяло онлайн, без необходимост да ги носите в наш офис.
             </p>
             <div className="flex justify-center flex-wrap gap-6 mt-3">
               <button class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
-                Пусни своята заявка
+                Пусни заявка
               </button>
               <button class="bg-gray-300 shadow-2xl hover:bg-indigo-500 text-black font-bold py-2 px-4 rounded-md">
-                Имате въпроси?
+                Научи повече
               </button>
             </div>
           </div>
