@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="container flex flex-col-reverse mb-3 xl:flex-row items-center gap-6 mt-6">
           <div className="flex flex-1 flex-col items-center">
             <h2 className="text-gray-800 text-center text-2xl md:text-3 xl:text-4xl mb-6">
-              Запознайте се с нас!
+              Запознай се с нас!
             </h2>
             <p className="text-gray-400 lg:text-lg sm:text-sm text-center mb-6 ">
             Нашите специалисти в IT Services ще Ви предложат услуги на високо ниво, за да отстранят всеки един софтуерен или хардуерен проблем с компютрите или лаптопите във вашия дом или офис, на място или изцяло онлайн, без необходимост да ги носите в наш офис.
