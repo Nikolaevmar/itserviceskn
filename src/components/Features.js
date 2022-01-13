@@ -9,7 +9,7 @@ import ultraviewer from '../assets/icons/ultraviewer.png'
 
 export default function Features() {
     return (
-        <div class="bg-white dark:bg-gray-900 mt-20">
+        <div class="bg-white dark:bg-gray-900 mt-32">
         <div class="container px-6 py-10 mx-auto">
           <h1 class="w-full text-3xl font-semibold text-gray-800 lg:text-4xl dark:text-white flex justify-center">
             Какви услуги предлагаме?
