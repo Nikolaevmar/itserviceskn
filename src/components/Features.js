@@ -9,9 +9,9 @@ import ultraviewer from '../assets/icons/ultraviewer.png'
 
 export default function Features() {
     return (
-        <div class="bg-white dark:bg-gray-900 mt-32">
+        <div class="bg-white mt-32">
         <div class="container px-6 py-10 mx-auto">
-          <h1 class="w-full text-2xl lg:text-4xl text-center font-semibold text-gray-800  dark:text-white flex justify-center">
+          <h1 class="text-2xl lg:text-4xl font-semibold text-gray-800 flex justify-center">
             Какви услуги предлагаме?
           </h1>
           <p class="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
@@ -24,7 +24,7 @@ export default function Features() {
            <FeatureBox image={printer} title='Настройка на периферно устройство' content='Настройката на периферни устройства е услуга, която включва изтегляне на последна версия на драйвер за конкретното устройство (принтер, скенер, копир и др.), проверка на свързаността и инсталиране на драйвъра.'/>
           </div>
           <p class="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
-            *Като единственото изискване за онлайн услуги е да имате една от следните програми инсталирани*
+            *Изискване за онлайн услуги е да имате една от следните програми инсталирани и добра интернет връзка*
           </p>
           <div className='flex mt-3 justify-center'>
               <a href="https://www.teamviewer.com/en/" target="_blank" rel="noreferrer">
