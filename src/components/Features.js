@@ -27,11 +27,11 @@ export default function Features() {
             *Като единственото изискване за онлайн услуги е да имате една от следните програми инсталирани*
           </p>
           <div className='flex mt-3 justify-center'>
-              <a href="https://www.teamviewer.com/en/" target="_blank">
-                <img src={teamviewer} className='w-12 h-12 lg:w-16 lg:h-16 mr-8'/>
+              <a href="https://www.teamviewer.com/en/" target="_blank" rel="noreferrer">
+                <img src={teamviewer} className='w-12 h-12 lg:w-16 lg:h-16 mr-8' alt=''/>
                 </a>
-              <a href="https://www.ultraviewer.net/en/download.html" target="_blank">
-                <img src={ultraviewer} className='w-12 h-12 lg:w-16 lg:h-16'/>
+              <a href="https://www.ultraviewer.net/en/download.html" target="_blank" rel="noreferrer">
+                <img src={ultraviewer} className='w-12 h-12 lg:w-16 lg:h-16' alt=''/>
                 </a>
             </div>
         </div>
