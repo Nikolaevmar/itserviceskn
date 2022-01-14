@@ -23,11 +23,6 @@ export default function Navbar() {
                   <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/contacts">Контакти</Link>
                   </div>
-
-                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
-                  <Link to="/pricing">Цени</Link>
-                  </div>
-
                   <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/apply">Работи от вкъщи</Link>
                   </div>
