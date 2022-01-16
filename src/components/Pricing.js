@@ -3,7 +3,7 @@ import React from "react";
 export default function Pricing() {
   return (
     <div className="bg-background mt-28">
-      <h1 className="flex justify-center text-2xl lg:text-4xl text-center text-gray-800">
+      <h1 className="text-2xl lg:text-4xl text-gray-800 flex justify-center">
         Колко струва?
       </h1>
       <table className="rounded-xl bg-indigo-50 m-5 w-4/6 mx-auto text-center">
