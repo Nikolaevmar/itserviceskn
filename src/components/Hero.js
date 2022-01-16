@@ -3,7 +3,6 @@ import heroimg from "../assets/images/heroimg.jpg";
 
 export default function Hero() {
     return (
-      <div className="relative">
         <div className="container flex flex-col-reverse mb-3 xl:flex-row items-center gap-6 mt-6">
           <div className="flex flex-1 flex-col items-center">
             <h2 className="text-gray-800 text-center text-2xl md:text-3 xl:text-4xl mb-6">
@@ -25,6 +24,5 @@ export default function Hero() {
             <img src={heroimg} alt=''/>
           </div>
         </div>
-      </div>
     )
 }

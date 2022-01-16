@@ -3,14 +3,10 @@ import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
 import RequestForm from "../components/RequestForm";
-import useScrollSnap from "react-use-scroll-snap";
-import { useRef } from "react";
 
 export default function Home() {
-  const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 750, delay: 750 });
   return (
-    <div className="bg-background bg-no-repeat" ref={scrollRef}>
+    <div className="bg-background bg-no-repeat">
       <Hero />
       <Features />
       <Pricing />
