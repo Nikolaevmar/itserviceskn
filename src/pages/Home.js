@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
+import RequestForm from "../components/RequestForm";
 import useScrollSnap from "react-use-scroll-snap";
 import { useRef } from "react";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Pricing />
+      <RequestForm />
     </div>
   );
 }

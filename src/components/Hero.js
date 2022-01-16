@@ -13,10 +13,10 @@ export default function Hero() {
             Нашите специалисти в IT Services ще Ви предложат услуги на високо ниво, за да отстранят всеки един софтуерен или хардуерен проблем с компютрите или лаптопите във вашия дом или офис, на място или изцяло онлайн, без необходимост да ги носите в наш офис.
             </p>
             <div className="flex justify-center flex-wrap gap-6 mt-3">
-              <button class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
+              <button className="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
                 Пусни заявка
               </button>
-              <button class="bg-gray-300 shadow-2xl hover:bg-indigo-500 hover:text-white font-bold py-2 px-4 rounded-md">
+              <button className="bg-gray-300 shadow-2xl hover:bg-indigo-500 hover:text-white font-bold py-2 px-4 rounded-md">
                 Научи повече
               </button>
             </div>

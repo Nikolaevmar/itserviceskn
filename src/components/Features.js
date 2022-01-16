@@ -9,16 +9,16 @@ import ultraviewer from "../assets/icons/ultraviewer.png";
 
 export default function Features() {
   return (
-    <div class="bg-white mt-28">
-      <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-2xl lg:text-4xl text-gray-800 flex justify-center">
+    <div className="bg-white mt-28">
+      <div className="container px-6 py-10 mx-auto">
+        <h1 className="text-2xl lg:text-4xl text-gray-800 flex justify-center">
           Какви услуги предлагаме?
         </h1>
-        <p class="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
+        <p className="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
           Нашите специалисти ще Ви предложат професионална, дистанционна
           поддръжка която включва
         </p>
-        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-2 text-center">
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-2 text-center">
           <FeatureBox
             image={protection}
             title="Почиставане от вируси"
@@ -40,7 +40,7 @@ export default function Features() {
             content="Настройката на периферни устройства е услуга, която включва изтегляне на последна версия на драйвер за конкретното устройство (принтер, скенер, копир и др.), проверка на свързаността и инсталиране на драйвъра."
           />
         </div>
-        <p class="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
+        <p className="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
           *Изискване за онлайн услуги е да имате една от следните програми
           инсталирани и добра интернет връзка*
         </p>
