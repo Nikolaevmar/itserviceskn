@@ -57,10 +57,10 @@ export default function Navbar() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                   <div className="text-white  px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
-                  <Link to="/contacts">Контакти</Link>
+                  <Link to="/">Начало</Link>
                   </div>
                   <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
-                  <Link to="/pricing">Услуги</Link>
+                  <Link to="/contacts">Контакти</Link>
                   </div>
                   <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/apply">Работи от вкъщи</Link>
