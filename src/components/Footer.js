@@ -29,7 +29,7 @@ export default function Footer() {
         </p>
         <p className="text-xs text-center text-white flex flex-col">
         <a href="https://www.vecteezy.com/free-vector/plant">Plant Vectors by Vecteezy</a>
-        <a href="https://www.flaticon.com/free-icons" target="_blank" without rel="noreferrer">Icons created by Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons" target="_blank" rel="noreferrer">Icons created by Flaticon</a>
         </p>
       </div>
     </section>
