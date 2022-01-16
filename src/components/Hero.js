@@ -16,7 +16,7 @@ export default function Hero() {
               <button class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
                 Пусни заявка
               </button>
-              <button class="bg-gray-300 shadow-2xl hover:bg-indigo-500 text-black font-bold py-2 px-4 rounded-md">
+              <button class="bg-gray-300 shadow-2xl hover:bg-indigo-500 hover:text-white font-bold py-2 px-4 rounded-md">
                 Научи повече
               </button>
             </div>
