@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FeatureBox(props) {
   return (
-    <div className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
+    <div className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl shadow-md">
       <span className="inline-block text-blue-500 dark:text-blue-400">
         <img src={props.image} className="w-12 h-12" alt="" />
       </span>

@@ -1,7 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function RequestForm() {
+
+  const [isSubmit, setIsSubmit] = useState(false);
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,6 +24,7 @@ export default function RequestForm() {
         }
       );
     e.target.reset();
+    setIsSubmit(true)
   };
 
   return (
@@ -29,7 +33,7 @@ export default function RequestForm() {
         Изпрати заявка
       </h1>
       <div className="flex justify-center">
-        <form ref={form} onSubmit={sendEmail} className="sm:max-w-sm md:max-w-md lg:max-w-2xl mt-16 p-20 border-2 border-indigo-300 rounded-lg">
+        <form ref={form} onSubmit={sendEmail} className="sm:max-w-lg md:max-w-2xl lg:max-w-2xl mt-16 p-20 border-2 border-indigo-300 rounded-lg shadow-xl">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
@@ -105,6 +109,7 @@ export default function RequestForm() {
             </div>
           </div>
           <input type="submit" value="Изпрати" className='bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md w-full mt-6 cursor-pointer'/>
+          <span>{isSubmit ? <p className='text-center text-green-600 mt-6'>Успешно изпратена заявка, очаквайте отговор скоро ✔️</p> : null}</span>
         </form>
       </div>
     </div>
