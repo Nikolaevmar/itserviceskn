@@ -32,8 +32,11 @@ export default function RequestForm() {
       <h1 className="text-2xl lg:text-4xl text-gray-800 flex justify-center">
         Изпрати заявка
       </h1>
+      <p className="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
+          Не се колебай и изпрати своята заявка, ние ще се свържем с Вас възможно най-скоро.
+        </p>
       <div className="flex justify-center">
-        <form ref={form} onSubmit={sendEmail} className="sm:max-w-lg md:max-w-2xl lg:max-w-2xl mt-16 p-20 border-2 border-indigo-300 rounded-lg shadow-xl">
+        <form ref={form} onSubmit={sendEmail} className="sm:max-w-lg md:max-w-2xl lg:max-w-3xl mt-12 p-20 border-2 border-indigo-300 rounded-lg shadow-xl bg-white">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">

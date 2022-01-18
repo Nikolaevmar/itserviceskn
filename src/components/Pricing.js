@@ -6,6 +6,9 @@ export default function Pricing() {
       <h1 className="text-2xl lg:text-4xl text-gray-800 flex justify-center">
         Колко струва?
       </h1>
+      <p className="text-md mt-4 text-gray-500 xl:mt-6 dark:text-gray-300 justify-center flex lg:text-lg text-center">
+          Имате проблем който не е вписан тук? Свържете се с нас.
+        </p>
       <table className="rounded-xl bg-indigo-50 m-5 w-4/6 mx-auto text-center shadow-xl">
       <tbody>
         <tr className="border-b-2 border-indigo-200">
