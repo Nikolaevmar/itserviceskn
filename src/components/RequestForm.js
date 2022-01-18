@@ -3,10 +3,8 @@ import emailjs from "@emailjs/browser";
 
 export default function RequestForm() {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "gmail",
@@ -31,13 +29,13 @@ export default function RequestForm() {
         Изпрати заявка
       </h1>
       <div className="flex justify-center">
-        <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg mt-16">
+        <form ref={form} onSubmit={sendEmail} className="sm:max-w-sm md:max-w-md lg:max-w-2xl mt-16 p-20 border-2 border-indigo-300 rounded-lg">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
                 Име
               </label>
-              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" name="name"/>
+              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" name="name" required/>
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
@@ -51,13 +49,13 @@ export default function RequestForm() {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
                 E-mail
               </label>
-              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" name="email"/>
+              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" name="email" required/>
             </div>
             <div className="w-full px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-pn">
                 Телефонен номер
               </label>
-              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-pn" type="text" name="phone"/>
+              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-pn" type="text" name="phone" required/>
             </div>
           </div>
           <div className="flex flex-wrap -mx-3 mb-2">
@@ -66,7 +64,7 @@ export default function RequestForm() {
                 Град
               </label>
               <div className="relative">
-                <select className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" name='city'>
+                <select className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" name='city' required>
                   <option>Кюстендил</option>
                   <option>Лом</option>
                   <option>Дупница</option>
@@ -86,14 +84,14 @@ export default function RequestForm() {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-address">
                 Адрес
               </label>
-              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-address" type="text" name='address'/>
+              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-address" type="text" name='address' required/>
             </div>
             <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-work">
                 Начин на работа
               </label>
               <div className="relative">
-                <select className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-work" name='work'>
+                <select className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-work" name='work' required>
                   <option>Онлайн</option>
                   <option>На адрес</option>
                   <option>В наш офис</option>
