@@ -59,7 +59,7 @@ export default function Pricing() {
         <tbody>
         <tr>
           <td className="lg:pl-28 py-3 text-left pl-6">❌ Инсталация на Windows XP</td>
-          <td className="pr-28 py-3 text-right">Услугата е спряна.</td>
+          <td className="pr-28 py-3 text-center">Услугата е спряна</td>
         </tr>
         </tbody>
       </table>
