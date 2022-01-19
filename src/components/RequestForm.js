@@ -3,21 +3,24 @@ import emailjs from "@emailjs/browser";
 
 export default function RequestForm() {
   const [isSubmit, setIsSubmit] = useState(false);
+  const [error, setError] = useState(false)
 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async(e) => {
     e.preventDefault();
-    emailjs.sendForm( "gmail", "template_bwsfslr", form.current, "user_4z4ilokKf4J49OHDdukg9")
+
+    emailjs.sendForm("gmail", "template_bwsfslr", form.current, "user_4z4ilokKf4J49OHDdukg9")
       .then((result) => {
           console.log(result.text);
         },
         (error) => {
           console.log(error.text);
+          setError(true);
         }
       );
     e.target.reset();
-    setIsSubmit(true)
+    setIsSubmit(true);
   };
 
   return (
@@ -29,7 +32,7 @@ export default function RequestForm() {
           Не се колебай и изпрати своята заявка, ние ще се свържем с Вас възможно най-скоро.
         </p>
       <div className="flex justify-center">
-        <form onSubmit={sendEmail} className="sm:max-w-lg md:max-w-xl lg:max-w-2xl mt-12 p-20 border-2 border-indigo-300 rounded-lg shadow-xl bg-white">
+        <form ref={form} onSubmit={sendEmail} className="sm:max-w-lg md:max-w-2xl lg:max-w-2xl mt-12 p-20 border-2 border-indigo-300 rounded-lg shadow-xl bg-white">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-first-name">
@@ -106,6 +109,7 @@ export default function RequestForm() {
           </div>
           <input type="submit" value="Изпрати" className='bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md w-full mt-6 cursor-pointer'/>
           <span>{isSubmit ? <p className='text-center text-green-600 mt-6'>Успешно изпратена заявка, очаквайте отговор скоро ✔️</p> : null}</span>
+          <span>{error ? <p className='text-center text-red-600 mt-6'>Имаше грешка с изпращането на заявката</p> : null}</span>
         </form>
       </div>
     </div>
