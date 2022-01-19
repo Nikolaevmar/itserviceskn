@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
 import RequestForm from "../components/RequestForm";
+import ScrollButton from '../components/ScrollButton'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
       <Pricing />
       <RequestForm />
+      <ScrollButton />
     </div>
   );
 }

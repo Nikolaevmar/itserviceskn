@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   let [open, setOpen] = useState(false);
   return (
-      <div className="bg-gray-800">
+      <div className="bg-gray-800" id='nav'>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
             <div className="flex items-center w-full justify-between">
