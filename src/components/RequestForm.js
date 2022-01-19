@@ -32,13 +32,13 @@ export default function RequestForm() {
         <form onSubmit={sendEmail} className="sm:max-w-lg md:max-w-xl lg:max-w-2xl mt-12 p-20 border-2 border-indigo-300 rounded-lg shadow-xl bg-white">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
+              <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-first-name">
                 Име
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" name="name" required/>
             </div>
             <div className="w-full md:w-1/2 px-3">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
+              <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-last-name">
                 Фамилия
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" name="last_name"/>
@@ -46,13 +46,13 @@ export default function RequestForm() {
           </div>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
+              <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-email">
                 E-mail
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" name="email" required/>
             </div>
             <div className="w-full px-3">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-pn">
+              <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-pn">
                 Телефонен номер
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-pn" type="text" name="phone" required/>
@@ -60,7 +60,7 @@ export default function RequestForm() {
           </div>
           <div className="flex flex-wrap -mx-3 mb-2">
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-city">
+              <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-city">
                 Град
               </label>
               <div className="relative">
@@ -81,13 +81,13 @@ export default function RequestForm() {
               </div>
             </div>
             <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-address">
+              <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-address">
                 Адрес
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-address" type="text" name='address' required/>
             </div>
             <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-work">
+              <label className="block uppercase tracking-wide text-gray-900 text-xs mb-2" htmlFor="grid-work">
                 Начин на работа
               </label>
               <div className="relative">
