@@ -9,7 +9,7 @@ import ultraviewer from "../assets/icons/ultraviewer.png";
 
 export default function Features() {
   return (
-    <div className="bg-white mt-28">
+    <div className="bg-white mt-28" id='features'>
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-2xl lg:text-4xl text-gray-800 flex justify-center">
           Какви услуги предлагаме?

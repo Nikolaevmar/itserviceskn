@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-scroll';
 import heroimg from "../assets/images/heroimg.jpg";
 
 export default function Hero() {
@@ -13,10 +14,10 @@ export default function Hero() {
             </p>
             <div className="flex justify-center flex-wrap gap-6 mt-3">
               <button className="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
-                Пусни заявка
+                <Link to='form' spy={true} smooth={true}>Пусни заявка</Link>
               </button>
               <button className="bg-gray-300 shadow-2xl hover:bg-indigo-500 hover:text-white font-bold py-2 px-4 rounded-md">
-                Научи повече
+                <Link to='features' spy={true} smooth={true}>Научи повече </Link>
               </button>
             </div>
           </div>

@@ -1,22 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function RequestForm() {
-
   const [isSubmit, setIsSubmit] = useState(false);
 
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_bwsfslr",
-        form.current,
-        "user_4z4ilokKf4J49OHDdukg9"
-      )
-      .then(
-        (result) => {
+    emailjs.sendForm( "gmail", "template_bwsfslr", form.current, "user_4z4ilokKf4J49OHDdukg9")
+      .then((result) => {
           console.log(result.text);
         },
         (error) => {
@@ -28,7 +21,7 @@ export default function RequestForm() {
   };
 
   return (
-    <div className="mt-40">
+    <div className="mt-40" id='form'>
       <h1 className="text-2xl lg:text-4xl text-gray-800 flex justify-center">
         Изпрати заявка
       </h1>
@@ -36,7 +29,7 @@ export default function RequestForm() {
           Не се колебай и изпрати своята заявка, ние ще се свържем с Вас възможно най-скоро.
         </p>
       <div className="flex justify-center">
-        <form ref={form} onSubmit={sendEmail} className="sm:max-w-lg md:max-w-2xl lg:max-w-3xl mt-12 p-20 border-2 border-indigo-300 rounded-lg shadow-xl bg-white">
+        <form onSubmit={sendEmail} className="sm:max-w-lg md:max-w-xl lg:max-w-2xl mt-12 p-20 border-2 border-indigo-300 rounded-lg shadow-xl bg-white">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
