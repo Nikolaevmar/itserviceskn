@@ -1,9 +1,10 @@
 import React from 'react'
+import ApplyContainer from '../components/ApplyContainer'
 
 export default function Apply() {
     return (
         <div>
-            apply7676
+            <ApplyContainer/>
         </div>
     )
 }
