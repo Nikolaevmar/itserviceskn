@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 //Pages and components
-import Apply from "./pages/Apply";
 import Contacts from "./pages/Contacts";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
@@ -14,7 +13,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/apply" element={<Apply />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

@@ -23,9 +23,6 @@ export default function Navbar() {
                   <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/contacts">Контакти</Link>
                   </div>
-                  <div className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
-                  <Link to="/apply">Работи от вкъщи</Link>
-                  </div>
                 </div>
               </div>
             </div>
@@ -61,9 +58,6 @@ export default function Navbar() {
                   </div>
                   <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
                   <Link to="/contacts">Контакти</Link>
-                  </div>
-                  <div className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
-                  <Link to="/apply">Работи от вкъщи</Link>
                   </div>
               </div>
             </div>
